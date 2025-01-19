@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        *{
+            box-sizing: border-box; 
+        }
+        body, html {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة الحشو الافتراضي */
+  overflow-x: hidden; /* منع التمرير الأفقي الزائد */
+}
+
+        .banner { text-align: center; background: linear-gradient(to bottom, #fcc99e, ); color: white; padding: 2rem; }
+  .banner h1 { margin-bottom: 0.5rem; }
+  .banner p { margin-bottom: 1rem; }
+  .banner button { padding: 0.5rem 1rem; background-color: #f90; border: none; cursor: pointer; font-size: 1rem; }
+  .banner button:hover { background-color: #c60; }
+  .banner img { width: 50%; height: 50%; }
+
+  /* تنسيق البطاقات لتكون بجانب بعض */
+.cards-container {
+  display: flex; /* استخدام الفلكسبوكس لتنظيم البطاقات أفقيًا */
+  justify-content:center; /* توزيع البطاقات بالتساوي على المحور الأفقي */
+  flex-wrap: wrap; /* السماح للبطاقات بالانتقال إلى السطر التالي إذا لم يكن هناك مساحة كافية */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: calc(30%); /* تعديل العرض ليأخذ نصف المساحة مع ترك مسافة */
+  margin: 10px; /* إضافة هامش حول البطاقات */
+}
+
+/* تعديلات أخرى للتأكد من أن البطاقات تظهر بشكل جيد على الأجهزة المختلفة */
+
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+<div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="#" class="navbar-brand">EN</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="testnavbar.html">AnaSayfa</a></li>
+                            <li><a href="hakımızda.html">Hakımızda</a></li>
+                              
+                            </li>
+                            <li><a href="kurslar.html">kurslar</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+
+
+                        <ul class="nav navbar-nav navbar-right">
+                          
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h1>Best Online Education Expertise</h1>
+            <p>Learn English Online at Any Age with Us!</p>
+            <button>Get Started</button>
+            
+          </div>
+    </div>
+    <div class="container text-center">
+        <h3>English Lerning School İLE İNGİLİZCE DERSLERİ</h3>
+        <p></p>
+        <ul>
+            <li>
+                <strong>Dersler çoklu seviyelerde</strong>
+                <br>
+                Web sitesi, tüm öğrenci seviyelerine uygun çeşitli eğitim derslerini içerir, başlangıç seviyesinden ileri seviyeye kadar.
+                <br>
+                <br>
+            </li>
+            <li>
+                <strong>Referanslar ve ek kaynaklar</strong>
+                <br>
+                Web sitesi, kuralları anlamada ve kelime haznesini artırmada yardımcı olmak için sözlükler ve ek kaynaklar gibi referanslar içerir.
+                <br>
+                <br>
+            </li>
+            <li>
+                <strong>Çeşitli eğitim materyalleri</strong>
+                <br>
+                Eğlenceli öğrenmeyi sağlamak için interaktif oyunlar ve gerçek hayata dayalı egzersizler içeren materyaller sunuyoruz.
+                <br>
+                <br>
+            </li>
+        </ul>
+    </div>
+
+    <section id="how-to-start" class="text-center">
+        <h2>Kursa nasıl başlanır?</h2>
+        <p>
+            Eğitim programımıza başlamak için, aşağıdaki adımları takip etmelisiniz:</p>
+            <ol>
+                <li><strong>Kayıt:</strong> Kayıt sayfasına gidin girin bilgilerinizi. Kayıt olduktan sonra, içeriğe erişim sağlamak için bir kullanıcı adı ve şifre alacaksınız.</li>
+                <li><strong>Derslere Erişim:</strong> Kayıt olduktan sonra, giriş sayfası aracılığıyla kursun tüm eğitim kaynaklarına tam erişim sağlayacaksınız.</li>
+                <li><strong>Kursları Keşfetme:</strong> Mevcut kursları gözden geçirin ve ihtiyaçlarınıza uygun olanı seçin.</li>
+                <li><strong>İlerlemeye Devam Etme:</strong> Kursa başlayın birimleri tamamlayarak, alıştırmaları gerçekleştirerek وiçerikle etkileşimde bulunarak devam edin.</li>
+            </ol>
+            <p>
+                Buradayız, eğitim yolculuğunuzda sizi desteklemek için. Herhangi bir yardıma ihtiyacınız olursa çekinmeden bize ulaşın. Keyifli bir öğrenme deneyimi dileriz!
+            </p>                 
+        </section>
+
+        <hr style="margin-top: 5px; margin-bottom: 25px;">
+        <h2 style="text-align: center;">KURSLARIMIZ VE DERSLERIMIZ</h2>
+        <div class="cards-container">
+
+
+            <div class="card">
+              <img src="/imegs/card2.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>VİDEO</b></h4> 
+                <p>6 seviye her seviye için farklı videoler var</p> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="/imegs/card2.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>KURALLAR</b></h4> 
+                <p>6 seviye her seviye için farklı kurallar var</p> 
+              </div>
+            </div>
+            <div class="card">
+                <img src="/imegs/card2.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>METİNLER</b></h4> 
+                  <p>6 seviye her seviye için farklı metinler var</p> 
+                </div>
+              </div>
+              </div>
+       
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

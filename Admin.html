@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="add-question-form">
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question"><br><br>
+        <label for="a">Option A:</label>
+        <input type="text" id="a" name="a"><br><br>
+        <label for="b">Option B:</label>
+        <input type="text" id="b" name="b"><br><br>
+        <label for="c">Option C:</label>
+        <input type="text" id="c" name="c"><br><br>
+        <label for="d">Option D:</label>
+        <input type="text" id="d" name="d"><br><br>
+        <label for="correct">Correct Answer (a, b, c, or d):</label>
+        <input type="text" id="correct" name="correct"><br><br>
+        <button onclick="addQuestion()">Add Question</button>
+    </div>
+    
+    <script>
+function addQuestion() {
+    const question = document.getElementById('question').value;
+    const a = document.getElementById('a').value;
+    const b = document.getElementById('b').value;
+    const c = document.getElementById('c').value;
+    const d = document.getElementById('d').value;
+    const correct = document.getElementById('correct').value;
+
+    const newQuestion = {
+        question: question,
+        a: a,
+        b: b,
+        c: c,
+        d: d,
+        correct: correct
+    };
+
+    quizData.push(newQuestion);
+    selectedQuestions.push(newQuestion); // تحديث المصفوفة selectedQuestions
+
+    alert('Question added successfully!');
+}
+    </script>
+</body>
+</html>
